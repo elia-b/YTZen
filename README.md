@@ -8,8 +8,8 @@
 
 # YouTube Zen
 
-This Browser plug-in is meant for personal use.
-Feel anyway free to leave comments and suggestions.
+This Browser extention is designed for personal use.
+Feel free anyway to share your thoughts and ideas.
 
 Features:
 
