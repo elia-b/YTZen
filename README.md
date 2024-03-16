@@ -14,4 +14,5 @@ Feel free anyway to share your thoughts and ideas.
 Features:
 
 - Redirect any YouTube home page request to your subscriptions feed
-- Minor advartisment manipulation on YouTube
+- Minor advartisment blocking on YouTube
+- Minor blocking of YouTube shorts
