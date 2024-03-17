@@ -1,26 +1,29 @@
 {
-    "manifest_version": 2, 
-    "name": "YT Zen", 
-    "version": "1.0.0", 
-    "description": "A Firefox plugin to minimize distractions on YouTube.",
+  "manifest_version": 2,
+  "name": "YT Zen",
+  "version": "1.0.0",
+  "description": "A Firefox plugin to minimize distractions on YouTube.",
 
-    "content_scripts": [
-        {
-            "matches": ["https://www.youtube.com/*"], 
-            "js": ["app.js"] 
-        }
-    ],
-
-    "permissions": [
-        "activeTab"
-    ],
-
-    "icons": {
-        "48": "icon.svg",
-        "96": "icon.svg",
-        "128": "icon.svg",
-        "256": "icon.svg",
-        "72": "icon.svg",
-        "512": "icon.svg"
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["app.js"]
     }
+  ],
+
+  "permissions": ["activeTab"],
+
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg",
+    "128": "icon.svg",
+    "256": "icon.svg",
+    "72": "icon.svg",
+    "512": "icon.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "blahblah@blah"
+    }
+  }
 }
