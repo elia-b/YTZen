@@ -17,9 +17,13 @@ function executeOnLoad() {
 
 function removeAdSlots() {
   console.log("Removing all ad slots");
-  const adTag = ["ytd-ad-slot-renderer", "ytd-action-companion-ad-renderer"];
+  const adTag = [
+    "ytd-ad-slot-renderer",
+    "ytd-action-companion-ad-renderer",
+    "player-ads",
+  ];
   adTag.forEach((element) => {
-    const adSlots = document.querySelectorAll("ytd-ad-slot-renderer");
+    const adSlots = document.querySelectorAll(element);
 
     adSlots.forEach((adSlot) => {
       adSlot.parentNode.removeChild(adSlot);
