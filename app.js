@@ -22,8 +22,8 @@ function removeAdSlots() {
     "ytd-action-companion-ad-renderer",
     "player-ads",
     "engagement-panel-ads",
-    "ytd-player-legacy-desktop-watch-ads-renderer"
-    "ytd-engagement-panel-section-list-renderer"
+    "ytd-player-legacy-desktop-watch-ads-renderer",
+    "ytd-engagement-panel-section-list-renderer",
   ];
   adTag.forEach((element) => {
     const adSlots = document.querySelectorAll(element);
