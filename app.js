@@ -46,6 +46,7 @@ function removeShorts() {
 function polishYoutube() {
   removeAdSlots();
   removeShorts();
+  fixSubscriptionLandingPage();
 }
 
 function redirectToSubscriptions() {
@@ -55,6 +56,21 @@ function redirectToSubscriptions() {
   ) {
     window.location.href = "https://www.youtube.com/feed/subscriptions";
   }
+}
+
+function fixSubscriptionLandingPage() {
+  console.log("Fix subscription landing page");
+  const tiles = document.querySelectorAll("ytd-rich-item-renderer");
+
+  tiles.forEach((tile) => {
+    tile.style.setProperty("--ytd-rich-grid-items-per-row", "6");
+  });
+
+  const titles = document.querySelectorAll("#video-title.ytd-rich-grid-media");
+  titles.forEach((title) => {
+    title.style.webkitLineClamp = "unset";
+    title.style.maxHeight = "unset";
+  });
 }
 
 let previousUrl = "";
